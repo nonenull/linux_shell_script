@@ -24,3 +24,5 @@ cat > /etc/docker/deamon.json <<EOF
     }
 }
 EOF
+
+systemctl enable docker && systemctl restart docker
