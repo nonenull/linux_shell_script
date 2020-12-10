@@ -20,7 +20,7 @@ cat > /etc/docker/daemon.json <<EOF
     "experimental": true,
     "log-opts":{
         "max-size":"50m",
-        "max-file": 3
+        "max-file":"3"
     }
 }
 EOF
