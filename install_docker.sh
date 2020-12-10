@@ -13,7 +13,7 @@ chmod +x /usr/bin/docker-compose
 docker -v 
 docker-compose -v
 
-cat > /etc/docker/deamon.json <<EOF
+cat > /etc/docker/daemon.json <<EOF
 {
     "registry-mirror":"https://no1pfk8z.mirror.aliyuncs.com",
     "metrics-addr":"0.0.0.0:9323",
