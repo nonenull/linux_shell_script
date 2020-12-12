@@ -15,8 +15,12 @@ docker-compose -v
 
 cat > /etc/docker/daemon.json <<EOF
 {
-    "registry-mirror":"https://no1pfk8z.mirror.aliyuncs.com",
-    "metrics-addr":"0.0.0.0:9323",
+    "registry-mirrors": [
+        "https://1nj0zren.mirror.aliyuncs.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "http://f1361db2.m.daocloud.io",
+        "https://registry.docker-cn.com"
+    ],    "metrics-addr":"0.0.0.0:9323",
     "experimental": true,
     "log-opts":{
         "max-size":"50m",
