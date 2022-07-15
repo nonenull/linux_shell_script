@@ -4,7 +4,7 @@
 # cp this file to /etc/profile.d/, and exec source /etc/profile
 CurrentTime=$(date '+%Y%m%d%H%M%S')
 HistoryPath="/tmp/history"
-CurrentUser=$(logname)
+CurrentUser=$LOGNAME
 UserHistoryPath=${HistoryPath}/${CurrentUser}
 
 userIp=$(who -u am i 2>/dev/null | awk '{print $NF}' | sed -e 's/[()]//g')
